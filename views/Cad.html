@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estiloCad.css">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function mascara(telefone){ 
+            if(telefone.value.length == 0)
+                telefone.value = '(' + telefone.value; 
+            if(telefone.value.length == 3)
+                telefone.value = telefone.value + ') '; 
+ 
+            if(telefone.value.length == 10)
+                telefone.value = telefone.value + '-'; 
+  
+}
+    </script>
+    <div class="container">
+        <h1>CADATRASE-SE</h1>
+        <div class="formulario">
+            <form>
+                <div class="usuario">
+                    <label for="usuario">Usuário:<b>*</b></label><br>
+                    <input type="text" id="usuario" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email: <b>*</b></label><br>
+                    <input type="email" id="email" placeholder="user@user.com" required>
+                </div>
+                <div class="confirmEmail">
+                    <label for="email">Confime o email: <b>*</b></label>
+                    <input type="email" id="email" placeholder="user@user.com" required>
+                </div>
+                <div class="telefone">
+                    <label for="telefone">Telefone: <b>*</b></label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" pattern="[0-9]+$" onkeypress="mascara(this)" maxlength="15" required>
+                </div>
+                <div class="senha">
+                    <label for="senha">Senha: <b>*</b></label><br>
+                    <input type="password" id="senha" required>
+                </div>
+                <div class="confirmSenha">
+                    <label for="Senha">Confime sua senha: <b>*</b></label><br>
+                    <input type="password" id="Senha" required>
+                </div>
+                <div class="botao">
+                    <button onclick="Cadastrar()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
