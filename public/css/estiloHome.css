@@ -1,0 +1,166 @@
+/*SETINGS DO FUNDO DO HTML*/
+
+html{
+    background-image: linear-gradient(45deg, black, crimson);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 0 0 0;
+
+}
+/*DEFINIÇÕES DA GRADE DO SITEf*/
+
+.body{
+    margin: auto;
+    height: 700px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.661);
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecalho{
+    float: left;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+}
+.corpocentral1{
+    float: left;
+    width: 50%;
+    height: 35%;
+}
+.corpocentral2{
+    float: left;
+    width: 50%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+}
+.rodape{
+    float: left;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*SETINGS DOS INPUTS*/ 
+
+input{
+    background: none;
+    width: 100%;
+    padding: 2px;
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: all .3s ease-out;
+}
+
+/* AJUSTES DO FOMULÁRIO*/
+
+.label-float, .button, .acessarH1{
+    padding: 5px;
+}
+.acessarH1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+/*AJUSUTES DOS CABEÇALHO*/
+.cabecalhoH1{
+    margin-top: 100px;
+}
+
+/*AJUSTES DO RODA PÉ*/
+.rodapeH1{
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+/*ANIMAÇAO DOS INPUTS*/
+
+.label-float{
+    position: relative;
+    padding: 0;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+label{
+    color: rgba(0, 0, 0, 0.517);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+.label-float input:focus + label{
+    margin-top: 0;
+    color: black;
+    transition: .3s ease-in-out;
+}
+/* correção do bug dos inputs (label ficava por cima do conteúdo)*/
+.label-float input:valid + label{
+    margin-top: 0;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+/*SETINGS DO BUTTON FOMULÁRIO*/
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: none;
+    padding: 5px;
+    border: 2px 2px 2px 2px solid ;
+    border-color: black;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(22, 18, 18);
+    color: rgba(255, 255, 255, 0.541);
+}
+
+/*SETINGS DO CADASTRE-SE*/
+
+hr{
+    width: 50%;
+    border-color: black;
+}
+.cadastroLink, .nomeCentral{
+    display: flex;
+    justify-content: center;
+}
+.nomeCentral{
+    margin-top: 45px;
+    font-size: 10pt;
+}
+a{
+    text-decoration: none;
+    font-size: 20pt;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.517);
+    border: 2px solid rgba(0, 0, 0, 0.517);
+    border-radius: 3px;
+    padding: 4px;
+}
+a:hover{
+    color: black;
+    border-color: black;
+    transition: all .5s ease-out;
+}
