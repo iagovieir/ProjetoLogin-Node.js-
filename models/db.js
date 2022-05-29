@@ -14,7 +14,5 @@ try {
 catch(erro){
     console.erro(`conexão sem sucesso, pois apresenta o erro ${erro}.`);
 }
-    
-
 
 module.exports =  BD;
