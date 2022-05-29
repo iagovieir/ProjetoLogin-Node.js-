@@ -14,6 +14,11 @@ const User = BD.define('clientes',{
         allowNull: false,
         unique: true,
     },
+    Telefone:{
+        type: Sequelize.STRING(11),
+        unique: true,
+        allowNull: false
+    },
     Email:{
         type: Sequelize.STRING(80),
         allowNull: false,
@@ -25,7 +30,7 @@ const User = BD.define('clientes',{
     }
 })
 
-User.sync();
-User.sync({alter: true});
+//User.sync();
+//User.sync({alter: true});
 
 module.exports = User;
