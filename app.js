@@ -26,6 +26,10 @@ app.get("/cadastro", (req, res) =>{
     res.sendFile(__dirname + "/views/Cad.html");
 });
 
+app.get("/AdminPage", (req, res)=>{
+    res.sendFile(__dirname + "/views/AdminPage.html");
+})
+
 app.post("/AddOK", (req,res)=>{
     User.create({
         Usuario: req.body.usuario,
